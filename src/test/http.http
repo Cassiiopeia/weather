@@ -1,0 +1,10 @@
+### post createDiary
+POST https://localhost:8080/create/diary
+Content-Type: application/json
+
+{
+  "date": "2022-05-20",
+}
+
+### get readDiary
+GET http://localhost:8080/read/
