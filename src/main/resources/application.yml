@@ -15,6 +15,9 @@ spring:
         show_sql: true
   main:
     allow-bean-definition-overriding: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 openweathermap:
     key: 527ac8e8dc7668476c42f7069d525586
@@ -24,3 +27,7 @@ server:
 
 logging:
   config: classpath:logback-spring.xml
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui

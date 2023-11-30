@@ -75,9 +75,6 @@ public class DiaryService {
 
     @Transactional(readOnly = true)
     public List<Diary> readDiary(LocalDate date) {
-//        if (date.isAfter(LocalDate.ofYearDay(3050, 1))) {
-//            throw new InvalidDate();
-//        }
         return diaryRepository.findAllByDate(date);
     }
 
